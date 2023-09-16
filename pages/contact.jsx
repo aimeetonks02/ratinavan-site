@@ -41,7 +41,7 @@ export default function Contact(){
                             <p>@Ratinavan</p>
                         </Link>
                     </div>
-                    <div classNme="social" id="twitter">
+                    <div className="social" id="twitter">
                         <Link href="https://twitter.com/ratinavan">
                             <h1>Twitter</h1>
                             <p>@Ratinavan</p>

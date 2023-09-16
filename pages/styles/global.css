@@ -11,17 +11,16 @@ li{
   list-style-type: none;
 }
 
-/* .social{
+.social{
   text-align: center;
-  font-size: 30px;
-  width: 100%;
+  width: 90%;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 100px;
-} */
+}
 
 #twitter {
   background-color: #89c9f0;
@@ -37,7 +36,7 @@ li{
 }
 
 #email {
-  background-color: antiquewhite;
+  background-color: lightseagreen;
 }
 
 .navbar{
