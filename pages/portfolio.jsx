@@ -183,7 +183,7 @@ export default function Form(){
                 <Image src="/images/headshot/11.PNG"
                     width={300}
                     height={300}
-                    alt="a reference image"
+                    alt="a headshot of a girl smiling on a red background"
                 />
                 <Image src="/images/headshot/12.PNG"
                     width={300}
