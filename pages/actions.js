@@ -1,5 +1,5 @@
 
-export async function create(formData) {
+export default async function create(formData) {
   try {
     await createItem(formData.get('item'))
     revalidatePath('/')
