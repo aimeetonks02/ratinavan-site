@@ -72,12 +72,12 @@ function getDifference(oldChara, newChara){
     return price
 }
 
-// export function getPrice(){
-//     // let string = priceEl.innerText
-//     // let amount = string.replace("£", "")
-//     price = parseFloat(amount)
-//     return price
-// }
+export function getPrice(){
+    let string = price.innerText
+    let amount = string.replace("£", "")
+    price = parseFloat(amount)
+    return price
+}
 
 function setStyle(type){
     style = previousStyle(0.00)
