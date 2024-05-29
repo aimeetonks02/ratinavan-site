@@ -25,7 +25,7 @@ export default function Contact(){
                     <Link href='/portfolio'>Portfolio</Link>
                     <Link href='/services'>Services</Link>
                     <Link href='/form'>Form</Link>
-                    <Link href='/contact'>Contact Me</Link>
+                    <Link href='/contact' id="contacttag">Contact Me</Link>
                 </div>
             </div>
 

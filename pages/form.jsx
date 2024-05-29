@@ -27,7 +27,7 @@ export default function Form(){
                     <Link href='/'>Home</Link>
                     <Link href='/portfolio'>Portfolio</Link>
                     <Link href='/services'>Services</Link>
-                    <Link href='/form'>Form</Link>
+                    <Link href='/form' id="formtag">Form</Link>
                     <Link href='/contact'>Contact Me</Link>
                 </div>
             </div>

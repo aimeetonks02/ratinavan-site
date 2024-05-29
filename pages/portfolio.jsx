@@ -23,7 +23,7 @@ export default function Form(){
 
                 <div className="nav-links">
                     <Link href='/'>Home</Link>
-                    <Link href='/portfolio'>Portfolio</Link>
+                    <Link href='/portfolio' id="portfoliotag">Portfolio</Link>
                     <Link href='/services'>Services</Link>
                     <Link href='/form'>Form</Link>
                     <Link href='/contact'>Contact Me</Link>

@@ -156,6 +156,15 @@ a {
   display: none;
 }
 
+#hometag #contacttag #formtag #portfoliotag #servicestag {
+  background-color: #885775;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 div.scroll-container {
   background-color: #902851;
   overflow: auto;

@@ -24,7 +24,7 @@ export default function HomePage(){
                 </div>
 
                 <div className="nav-links">
-                    <Link href='/'>Home</Link>
+                    <Link href='/' id="hometag">Home</Link>
                     <Link href='/portfolio'>Portfolio</Link>
                     <Link href='/services'>Services</Link>
                     <Link href='/form'>Form</Link>
