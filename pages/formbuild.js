@@ -59,29 +59,29 @@ export default function FormStructure(){
 
             <div className="item">
                 <h2><u>Type of drawing:</u></h2>
-                <input type="radio" id="t1" name="type" onClick={(e)=>{setType("Profile Picture")}} onChange={setSize(1)}/><label htmlFor="type">Profile Picture(s)</label><br/>
-                <input type="radio" id="t2" name="type" onClick={(e)=>{setType("Headshot")}} onChange={setSize(2)}/><label htmlFor="type">Headshot</label><br/>
-                <input type="radio" id="t3" name="type" onClick={(e)=>{setType("Halfbody")}} onChange={setSize(3)}/><label htmlFor="type">Halfbody</label><br/>
-                <input type="radio" id="t4" name="type" onClick={(e)=>{setType("Fullbody")}} onChange={setSize(4)}/><label htmlFor="type">Fullbody</label><br/>
-                <input type="radio" id="t5" name="type" onClick={(e)=>{setType("Reference Page")}} onChange={setSize(5)}/><label htmlFor="type">OC Reference Page</label><br/>
-                <input type="radio" id="t6" name="type" onClick={(e)=>{setType("Make me an OC")}} onChange={setSize(6)}/><label htmlFor="type">Make Me a Character</label>
-                <input type='hidden' id='t0' name='type' onChange={setSize(0)}/>
+                <input type="radio" id="t1" name="type" onClick={(e)=>{setType("Profile Picture")}} onChange={() => setSize(1)}/><label htmlFor="type">Profile Picture(s)</label><br/>
+                <input type="radio" id="t2" name="type" onClick={(e)=>{setType("Headshot")}} onChange={() => setSize(2)}/><label htmlFor="type">Headshot</label><br/>
+                <input type="radio" id="t3" name="type" onClick={(e)=>{setType("Halfbody")}} onChange={() => setSize(3)}/><label htmlFor="type">Halfbody</label><br/>
+                <input type="radio" id="t4" name="type" onClick={(e)=>{setType("Fullbody")}} onChange={() => setSize(4)}/><label htmlFor="type">Fullbody</label><br/>
+                <input type="radio" id="t5" name="type" onClick={(e)=>{setType("Reference Page")}} onChange={() => setSize(5)}/><label htmlFor="type">OC Reference Page</label><br/>
+                <input type="radio" id="t6" name="type" onClick={(e)=>{setType("Make me an OC")}} onChange={() => setSize(6)}/><label htmlFor="type">Make Me a Character</label>
+                {/* <input type='hidden' id='t0' name='type' onChange={() => setSize(0)}/> */}
             </div>
 
             <div className="item">
                 <h2><u>Number of Characters:</u></h2>
-                <input type="radio" id="n1" name="number" onClick={(e)=>{setNumber("1 Character")}}/><label htmlFor="number">1 Character</label><br/>
-                <input type="radio" id="n2" name="number" onClick={(e)=>{setNumber("2 Characters")}}/><label htmlFor="number">2 Characters</label><br/>
-                <input type="radio" id="n3" name="number" onClick={(e)=>{setNumber("3 Characters")}}/><label htmlFor="number">3 Characters</label><br/>
-                <input type="radio" id="n4" name="number" onClick={(e)=>{setNumber("4 Characters or more")}}/><label htmlFor="number">4 or more Characters</label>
+                <input type="radio" id="n1" name="number" onClick={(e)=>{setNumber("1 Character")}} onChange={() => setChar(1)}/><label htmlFor="number">1 Character</label><br/>
+                <input type="radio" id="n2" name="number" onClick={(e)=>{setNumber("2 Characters")}} onChange={() => setChar(2)}/><label htmlFor="number">2 Characters</label><br/>
+                <input type="radio" id="n3" name="number" onClick={(e)=>{setNumber("3 Characters")}} onChange={() => setChar(3)}/><label htmlFor="number">3 Characters</label><br/>
+                <input type="radio" id="n4" name="number" onClick={(e)=>{setNumber("4 Characters or more")}} onChange={() => setChar(4)}/><label htmlFor="number">4 or more Characters</label>
             </div>
 
             <div className="item">
                 <h2><u>Colouring Style:</u></h2>
-                <input type="radio" id="s1" name="style" onClick={(e)=>{setStyle("Sketch")}}/><label htmlFor="style">Sketch</label><br/>
-                <input type="radio" id="s2" name="style" onClick={(e)=>{setStyle("Lineart")}}/><label htmlFor="style">Lineart</label><br/>
-                <input type="radio" id="s3" name="style" onClick={(e)=>{setStyle("Flat Colour")}}/><label htmlFor="style">Flat Colour</label><br/>
-                <input type="radio" id="s4" name="style" onClick={(e)=>{setStyle("Fully Shaded")}}/><label htmlFor="style">Fully Shaded</label>
+                <input type="radio" id="s1" name="style" onClick={(e)=>{setStyle("Sketch")}} onChange={() => setRender(1)}/><label htmlFor="style">Sketch</label><br/>
+                <input type="radio" id="s2" name="style" onClick={(e)=>{setStyle("Lineart")}} onChange={() => setRender(2)}/><label htmlFor="style">Lineart</label><br/>
+                <input type="radio" id="s3" name="style" onClick={(e)=>{setStyle("Flat Colour")}} onChange={() => setRender(3)}/><label htmlFor="style">Flat Colour</label><br/>
+                <input type="radio" id="s4" name="style" onClick={(e)=>{setStyle("Fully Shaded")}} onChange={() => setRender(4)}/><label htmlFor="style">Fully Shaded</label>
             </div>
 
             <div className="item">

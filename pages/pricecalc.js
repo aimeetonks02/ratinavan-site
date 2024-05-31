@@ -15,6 +15,7 @@ const order = new Map([
 
 //function for pushing the price to the screen
 export function toScreen(){
+    order.set('error', false);
     let price = calculatePrice();
     order.set('price', price);
     if (order.get('error') == true){
