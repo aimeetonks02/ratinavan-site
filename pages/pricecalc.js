@@ -14,7 +14,7 @@ const order = new Map([
 //number variable for the number of characters, set to 2, aka two characters
 
 //function for pushing the price to the screen
-export function toScreen(){
+export default function toScreen(){
     order.set('error', false);
     let price = calculatePrice();
     order.set('price', price);
