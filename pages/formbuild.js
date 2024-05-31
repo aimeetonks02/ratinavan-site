@@ -1,4 +1,4 @@
-import { setSize, noChara, setStyle, getPrice, toScreen} from './pricecalc'
+import { setSize, setChar, setRender, toScreen} from './pricecalc'
 import { useState } from 'react'
 
 export default function FormStructure(){    
@@ -50,21 +50,22 @@ export default function FormStructure(){
         <>
         <form className="section">
             <div className="item">
-                <label htmlFor="name">Name:</label><input type="text" name="name" onChange={(e)=>{setName(e.target.value)}}/>
+                <label htmlFor="name">Name:</label><input type="text" name="name" onChange={(e)=>{setName(e.target.value)}} required/>
             </div>
 
             <div className="item">
-                <label htmlFor="email">Email:</label><input type="email" name="email" onChange={(e)=>{setEmail(e.target.value)}}/>
+                <label htmlFor="email">Email:</label><input type="email" name="email" onChange={(e)=>{setEmail(e.target.value)}} required/>
             </div>
 
             <div className="item">
                 <h2><u>Type of drawing:</u></h2>
-                <input type="radio" id="t1" name="type" onClick={(e)=>{setType("Profile Picture")}}/><label htmlFor="type">Profile Picture(s)</label><br/>
-                <input type="radio" id="t2" name="type" onClick={(e)=>{setType("Headshot")}}/><label htmlFor="type">Headshot</label><br/>
-                <input type="radio" id="t3" name="type" onClick={(e)=>{setType("Halfbody")}}/><label htmlFor="type">Halfbody</label><br/>
-                <input type="radio" id="t4" name="type" onClick={(e)=>{setType("Fullbody")}}/><label htmlFor="type">Fullbody</label><br/>
-                <input type="radio" id="t5" name="type" onClick={(e)=>{setType("Reference Page")}}/><label htmlFor="type">OC Reference Page</label><br/>
-                <input type="radio" id="t6" name="type" onClick={(e)=>{setType("Make me an OC")}}/><label htmlFor="type">Make Me a Character</label>
+                <input type="radio" id="t1" name="type" onClick={(e)=>{setType("Profile Picture")}} onChange={setSize(1)}/><label htmlFor="type">Profile Picture(s)</label><br/>
+                <input type="radio" id="t2" name="type" onClick={(e)=>{setType("Headshot")}} onChange={setSize(2)}/><label htmlFor="type">Headshot</label><br/>
+                <input type="radio" id="t3" name="type" onClick={(e)=>{setType("Halfbody")}} onChange={setSize(3)}/><label htmlFor="type">Halfbody</label><br/>
+                <input type="radio" id="t4" name="type" onClick={(e)=>{setType("Fullbody")}} onChange={setSize(4)}/><label htmlFor="type">Fullbody</label><br/>
+                <input type="radio" id="t5" name="type" onClick={(e)=>{setType("Reference Page")}} onChange={setSize(5)}/><label htmlFor="type">OC Reference Page</label><br/>
+                <input type="radio" id="t6" name="type" onClick={(e)=>{setType("Make me an OC")}} onChange={setSize(6)}/><label htmlFor="type">Make Me a Character</label>
+                <input type='hidden' id='t0' name='type' onChange={setSize(0)}/>
             </div>
 
             <div className="item">
