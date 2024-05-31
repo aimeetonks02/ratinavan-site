@@ -49,15 +49,15 @@ export default function FormStructure(){
     return (
         <>
         <form className="section">
-            <div className="item">
-                <label htmlFor="name">Name:</label><input type="text" name="name" onChange={(e)=>{setName(e.target.value)}} required/>
+            <div className="field">
+                <label htmlFor="name">Name:</label><input className='txtbox' type="text" name="name" onChange={(e)=>{setName(e.target.value)}} required/>
             </div>
 
-            <div className="item">
-                <label htmlFor="email">Email:</label><input type="email" name="email" onChange={(e)=>{setEmail(e.target.value)}} required/>
+            <div className="field">
+                <label htmlFor="email">Email:</label><input className='txtbox' type="email" name="email" onChange={(e)=>{setEmail(e.target.value)}} required/>
             </div>
 
-            <div className="item">
+            <div className="field">
                 <h2><u>Type of drawing:</u></h2>
                 <input type="radio" id="t1" name="type" onClick={(e)=>{setType("Profile Picture")}} onChange={() => setSize(1)}/><label htmlFor="type">Profile Picture(s)</label><br/>
                 <input type="radio" id="t2" name="type" onClick={(e)=>{setType("Headshot")}} onChange={() => setSize(2)}/><label htmlFor="type">Headshot</label><br/>
@@ -68,7 +68,7 @@ export default function FormStructure(){
                 {/* <input type='hidden' id='t0' name='type' onChange={() => setSize(0)}/> */}
             </div>
 
-            <div className="item">
+            <div className="field">
                 <h2><u>Number of Characters:</u></h2>
                 <input type="radio" id="n1" name="number" onClick={(e)=>{setNumber("1 Character")}} onChange={() => setChar(1)}/><label htmlFor="number">1 Character</label><br/>
                 <input type="radio" id="n2" name="number" onClick={(e)=>{setNumber("2 Characters")}} onChange={() => setChar(2)}/><label htmlFor="number">2 Characters</label><br/>
@@ -76,7 +76,7 @@ export default function FormStructure(){
                 <input type="radio" id="n4" name="number" onClick={(e)=>{setNumber("4 Characters or more")}} onChange={() => setChar(4)}/><label htmlFor="number">4 or more Characters</label>
             </div>
 
-            <div className="item">
+            <div className="field">
                 <h2><u>Colouring Style:</u></h2>
                 <input type="radio" id="s1" name="style" onClick={(e)=>{setStyle("Sketch")}} onChange={() => setRender(1)}/><label htmlFor="style">Sketch</label><br/>
                 <input type="radio" id="s2" name="style" onClick={(e)=>{setStyle("Lineart")}} onChange={() => setRender(2)}/><label htmlFor="style">Lineart</label><br/>
@@ -84,14 +84,14 @@ export default function FormStructure(){
                 <input type="radio" id="s4" name="style" onClick={(e)=>{setStyle("Fully Shaded")}} onChange={() => setRender(4)}/><label htmlFor="style">Fully Shaded</label>
             </div>
 
-            <div className="item">
+            <div className="field">
                 {/* <h2><u>Calculate Estimated Price:</u></h2> */}
                 <h2>Estimated Price: </h2>
                 <h2 id='price' className='price'>{toScreen()}</h2>
             </div>
 
-            <div className="item">
-                <input type="submit" onClick={(e)=>{handleSubmit(e)}}/>
+            <div>
+                <input id='submit' type="submit" onClick={(e)=>{handleSubmit(e)}}/>
             </div>
         </form>
     </>
