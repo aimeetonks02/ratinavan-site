@@ -1,5 +1,4 @@
-import { setSize, setChar, setRender} from './pricecalc'
-import { toScreen } from './pricecalc'
+import toScreen, { setSize, setChar, setRender} from './pricecalc'
 import { useState } from 'react'
 
 export default function FormStructure(){    
