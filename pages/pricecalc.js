@@ -27,8 +27,8 @@ export default function toScreen(){
         let usprice = Math.round(price*1.28).toFixed(2)
         order.set('usprice', usprice);
         let screenprice = "£" + price + "/$" + usprice
-        return screenprice;
     }
+    return screenprice;
 }
 
 //function for finding the current price
