@@ -13,7 +13,7 @@ export default function Contact(){
                     </div>
                 </div>
                 <div class="nav-btn">
-                    <label for="nav-check">
+                    <label htmlFor="nav-check">
                     <span></span>
                     <span></span>
                     <span></span>
