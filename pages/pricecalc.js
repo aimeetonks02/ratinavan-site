@@ -17,6 +17,7 @@ const order = new Map([
 export default function toScreen(){
     order.set('error', false);
     let price = calculatePrice();
+    let screenprice;
     order.set('price', price);
     if (order.get('error') == true){
         return "This type is not available with this level of colour"
@@ -26,7 +27,7 @@ export default function toScreen(){
         price = Math.round(price).toFixed(2)
         let usprice = Math.round(price*1.28).toFixed(2)
         order.set('usprice', usprice);
-        let screenprice = "£" + price + "/$" + usprice
+        screenprice = "£" + price + "/$" + usprice
     }
     return screenprice;
 }
