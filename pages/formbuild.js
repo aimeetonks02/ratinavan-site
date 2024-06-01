@@ -42,6 +42,7 @@ export default function FormStructure(){
                 setType('')
                 setNumber('')
                 setStyle('')
+                window.location.href = '/submitted'
             }
         })
     }
