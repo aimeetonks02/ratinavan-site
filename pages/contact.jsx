@@ -28,7 +28,7 @@ export default function Contact(){
                     <Link href='/contact' id="contacttag">Contact Me</Link>
                 </div>
             </div>
-
+            <h1>Contact Me</h1>
             <section className="mainimg">
             </section>
 
