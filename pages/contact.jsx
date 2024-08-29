@@ -28,13 +28,13 @@ export default function Contact(){
                     <Link href='/contact' id="contacttag">Contact Me</Link>
                 </div>
             </div>
-            <h1>Contact Me</h1>
+
             <section className="mainimg">
             </section>
 
             <div>
                 <div className="social">
-                <h1 className={utilStyles.heading2Xl}>Contact Me!dksal</h1>
+                <h1 className={utilStyles.heading2Xl}>Contact Me!</h1>
                     <div className ="social" id="instagram">
                         <Link href="https://www.instagram.com/ratinavan/">
                             <h1>Instagram</h1>
